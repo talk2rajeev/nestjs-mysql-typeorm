@@ -14,3 +14,17 @@ export type CreateUserPostParams = {
     title: string;
     description: string;
 }
+
+export type CompanyParams = {
+    name: string;
+    address: string;
+}
+
+export type EmployeeParams = {
+    name: string;
+    email: string;
+}
+
+export type DesignationParams = {
+    designation: string;
+}
