@@ -10,12 +10,10 @@ export class CompanyService {
 
     fetchCompanies() {
         return this.companyRepository.find();
-        //{relations: ['profile', 'posts']}
     }
 
     fetchCompaniesWithEmployees() {
         return this.companyRepository.find({relations: ['employees']});
-        //{relations: ['profile', 'posts']}
     }
 
     createCompany(companyDetail: CompanyParams) {
